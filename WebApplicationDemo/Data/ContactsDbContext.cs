@@ -1,7 +1,7 @@
-﻿using EntityFramework6Demo.Models;
-using Microsoft.EntityFrameworkCore;
+﻿using Microsoft.EntityFrameworkCore;
+using EntityFramework6Demo.Models;
 
-namespace EntityFramework6Demo.Data
+namespace WebApplicationDemo.Data
 {
     public class ContactsDbContext : DbContext
     {
