@@ -1,5 +1,5 @@
 ﻿using Microsoft.EntityFrameworkCore;
-using EntityFramework6Demo.Models;
+using WebApplicationDemo.Models;
 
 namespace WebApplicationDemo.Data
 {
