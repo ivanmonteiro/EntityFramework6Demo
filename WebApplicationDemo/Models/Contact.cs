@@ -1,4 +1,4 @@
-﻿namespace EntityFramework6Demo.Models
+﻿namespace WebApplicationDemo.Models
 {
     public class Contact
     {
