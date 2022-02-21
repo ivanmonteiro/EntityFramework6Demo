@@ -1,7 +1,13 @@
 using Microsoft.EntityFrameworkCore;
 using WebApplicationDemo.Data;
+using Serilog;
 
 var builder = WebApplication.CreateBuilder(args);
+
+builder.Host.UseSerilog((ctx, cfg) => 
+    // cfg.WriteTo.Console()
+    cfg.WriteTo.Async(wt => wt.Console(), bufferSize: 500)
+);
 
 var connectionString = builder.Configuration.GetConnectionString("DefaultConnection");
 
